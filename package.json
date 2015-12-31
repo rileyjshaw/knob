@@ -1,0 +1,44 @@
+{
+  "name": "electron-drums",
+  "productName": "electron-drums",
+  "version": "0.0.0",
+  "description": "Hit piezos, trigger MIDI",
+  "license": "MIT",
+  "main": "index.js",
+  "repository": "rileyjshaw/electron-drums",
+  "author": {
+    "name": "Riley Shaw",
+    "email": "rileyjshaw@gmail.com",
+    "url": "rileyjshaw.com"
+  },
+  "engines": {
+    "node": ">=0.10.0"
+  },
+  "scripts": {
+    "start": "electron .",
+    "build": "electron-packager . $npm_package_productName --prune --asar --platform=darwin --arch=x64 --version=0.27.2"
+  },
+  "files": [
+    "index.js",
+    "index.html",
+    "index.css"
+  ],
+  "keywords": [
+    "drums",
+    "hardware",
+    "MIDI",
+    "piezo"
+  ],
+  "dependencies": {
+    "electron-debug": "^0.1.0",
+    "johnny-five": "^0.8.76",
+    "kefir": "^2.5.0",
+    "midi": "^0.9.3",
+    "serialport": "^1.7.4"
+  },
+  "devDependencies": {
+    "electron-packager": "^4.1.2",
+    "electron-prebuilt": "^0.27.2",
+    "electron-rebuild": "^0.2.1"
+  }
+}
